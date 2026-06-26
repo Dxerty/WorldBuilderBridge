@@ -32,6 +32,21 @@ Le fichier exporté peut ensuite être importé directement dans le mod afin de 
 Les ressources FBX doivent être exportées à partir du DevKit.
 ---
 
+## Installation
+
+Dans Blender:
+Edition -> Préférences... Sélectionnez ensuite le chemin de l'add-on à installer.
+
+  <picture>
+    <img src="https://www.relentlessworld.fr/installation_1.png" alt="Installation" width="900">
+  </picture>
+
+  <picture>
+    <img src="https://www.relentlessworld.fr/installation_2.png" alt="Installation" width="900">
+  </picture>
+
+---
+
 ## Importation
 
 World Builder Bridge peut recréer directement dans Blender une scène à parir d'un fichier au format `.ini` World Builder .
@@ -48,14 +63,10 @@ Level_Imported_<ini_filename>
 
 - L'importation est annulée si cette collection existe déjà, afin d'éviter les doublons accidentels.
 
-### Importation
-
 L'option d'importation ne permet pas de fusion dans une scène sous Blender. Chaque fichier `.ini` doit donc être importé indépendamment.
 
 > [!NOTE]
 World Builder stocke les coordonnées des objets relativement à l'origine de la scène plutôt qu'en coordonnées absolues. La fusion de plusieurs importations modifie donc le référentiel et entraîne un mauvais positionnement des objets.
-
-
 
 ---
 
@@ -72,7 +83,17 @@ Pour garantir un fonctionnement correct, il est recommandé de :
 
 ---
 
-## Options d'exportation
+## Interface et options
+
+  <picture>
+    <img src="https://www.relentlessworld.fr/ui.png" alt="Installation" width="900">
+  </picture>
+
+- Dossier librairies : dossier où se situent les fichiers materials_library.py et objects_library.py
+- Dossier FBX : dossier contenant l'exportation des assets à partir du DevKit (utilisez la commande « Exporter tout »)
+- Fichier log : définissez votre fichier de log
+- Mode : exporter / importer
+- Fichier export : définissez votre fichier d'export
 
 ### Player Can Build Upon
 
